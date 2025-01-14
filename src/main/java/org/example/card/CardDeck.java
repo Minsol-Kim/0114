@@ -17,8 +17,8 @@ public enum CardDeck {
         } //end for
         Collections.shuffle(cards); //카드 섞기
     }
-//원하는 기능 : 임의의 카드 뽑기
-//리턴타입 : 카드 , 파라미터 타입 : 카드
+    //원하는 기능 : 임의의 카드 뽑기
+    //리턴타입 : 카드 , 파라미터 타입 : 카드
      public Card getOne(){
          Card card = cards.remove(0);
          return card;

@@ -10,7 +10,8 @@ public enum MenuService {
     // 주어진 메뉴 데이터들을 제공
     //초기화
     private MenuService(){
-        this.menus = new ArrayList<>();
+        this.menus = new ArrayList<>(); //메뉴 ArrayList 생성
+        //메뉴 생성
         menus.add(new Menu(1, "Americano", 3000));
         menus.add(new Menu(2, "Latte", 3500));
         menus.add(new Menu(3, "Cappuccino", 4000));
