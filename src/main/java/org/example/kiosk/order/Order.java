@@ -16,9 +16,11 @@ public class Order {
         orderItemList = new ArrayList<>();
     }
 
-        //새로운 OrderItem 추가
+    //새로운 OrderItem 추가
     public void addOrderItem(OrderItem newItem) {
         orderItemList.add(newItem);//새로운 주문을 주문 목록에 추가
+
+
     }
 
 
