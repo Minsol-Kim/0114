@@ -1,4 +1,4 @@
-package vending;
+package org.example.vending;
 
 import java.util.Scanner;
 
