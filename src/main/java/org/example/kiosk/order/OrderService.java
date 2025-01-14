@@ -15,11 +15,11 @@ public enum OrderService {
 
     //주문 데이터 초기화 -> 생성자
     private OrderService(){
-    orders =new ArrayList<>();
-}
+        orders =new ArrayList<>();
+    }
     //주문을 받을것 -> 추가
     public void addOrder(Order order){
-    orders.add(order);
-}
+        orders.add(order);
+    }
 
 }
