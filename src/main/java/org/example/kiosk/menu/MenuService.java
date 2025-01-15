@@ -1,8 +1,11 @@
 package org.example.kiosk.menu;
 
+import lombok.extern.log4j.Log4j2;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+@Log4j2
 public enum MenuService {
     INSTANCE;
     private ArrayList<Menu> menus;
@@ -19,7 +22,13 @@ public enum MenuService {
     }
     //변수 값을 가지고 오는 메서드
 public ArrayList<Menu> getList(){
-        return menus;
+        log.trace("trace............");
+        log.debug("debug..............");
+        log.info("info.............");
+        log.warn("warn..............");
+        log.error("error............");
+        log.fatal("fatal.............");
+            return menus;
 
     }
 
