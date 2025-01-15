@@ -5,8 +5,8 @@ import org.example.kiosk.menu.Menu;
 import org.example.kiosk.menu.MenuService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-@Log4j2
 
+@Log4j2
 public class SampleTests {
 
     @Test
@@ -16,7 +16,9 @@ public class SampleTests {
 
         //각각의 메뉴에 대해서 이런 함수를 실행하라
         // f(x) => y (람다 lambda)
-        menuArrayList.forEach(m->log.info(m));
+        menuArrayList.forEach(m-> {
+            log.info(m);
+        });
     }
 
     @Test
