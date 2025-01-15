@@ -11,7 +11,7 @@ public enum MenuService {
     private ArrayList<Menu> menus;
 
     // 주어진 메뉴 데이터들을 제공
-    //초기화
+    //초기화-> 생성자
     private MenuService(){
         this.menus = new ArrayList<>(); //메뉴 ArrayList 생성
         //메뉴 생성

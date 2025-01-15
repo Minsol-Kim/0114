@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class Order {
     private int ono;//주문번호
     private ArrayList<OrderItem> orderItemList; //주문 목록
+
     //생성자 -> 데이터 초기화
     public Order() {
         orderItemList = new ArrayList<>();

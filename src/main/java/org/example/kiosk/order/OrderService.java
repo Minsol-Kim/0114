@@ -12,8 +12,7 @@ public enum OrderService {
     //몇 개나 만들것인지 결정
     INSTANCE;
     //주문 받음 -> 주문 보관
-    //주문에 대한 array
-    private ArrayList<Order> orders;
+    private ArrayList<Order> orders; //주문에 대한 array
     private int idx;
 
     //주문 데이터 초기화 -> 생성자
@@ -24,12 +23,9 @@ public enum OrderService {
     public int addOrder(Order order) {
         log.info(order);
         log.info("current idx: " + idx);
-
-        idx++;
-
-        order.setOno(idx);
-
-        orders.add(order);
+        idx++; //인덱스 증가
+        order.setOno(idx); //인덱스 -> 주문번호
+        orders.add(order);//주문 Array에 추가
 
         return idx;
     }

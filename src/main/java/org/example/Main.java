@@ -2,19 +2,23 @@ package org.example;
 
 import org.example.card.Card;
 import org.example.card.CardDeck;
+import org.example.kiosk.KioskUI;
 import org.example.lots.LotsUI;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //카드 2장 서로 나누어가짐
-        Card userCard= CardDeck.INSTANCE.getOne();
-        Card comCard=CardDeck.INSTANCE.getOne();
 
-        //나누어가진 카드 비교
-        System.out.println(userCard);
-        System.out.println(comCard);
+        KioskUI ui = new KioskUI();
+        ui.startOrder();
+//        //카드 2장 서로 나누어가짐
+//        Card userCard= CardDeck.INSTANCE.getOne();
+//        Card comCard=CardDeck.INSTANCE.getOne();
+//
+//        //나누어가진 카드 비교
+//        System.out.println(userCard);
+//        System.out.println(comCard);
 
 //        VendingMachine vm = new VendingMachine(20,5,5);
 //
