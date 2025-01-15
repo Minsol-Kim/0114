@@ -1,11 +1,13 @@
 package org.example.kiosk.order;
 
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.util.ArrayList;
 @Getter //내용 가지고 오기
 @ToString //전체 내용 확인
+@Setter
 
 //파라미터 메뉴번호, 메뉴 갯수 -> OrderItem
 public class Order {

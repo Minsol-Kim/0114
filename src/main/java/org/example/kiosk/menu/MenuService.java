@@ -22,13 +22,10 @@ public enum MenuService {
     }
     //변수 값을 가지고 오는 메서드
 public ArrayList<Menu> getList(){
-        log.trace("trace............");
-        log.debug("debug..............");
-        log.info("info.............");
-        log.warn("warn..............");
-        log.error("error............");
-        log.fatal("fatal.............");
-            return menus;
+    log.info("getList...called" );
+    log.info(menus);
+
+    return menus;
 
     }
 
